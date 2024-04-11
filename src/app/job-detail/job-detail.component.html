@@ -1,0 +1,38 @@
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<div>
+    <button class="back-btn" color="primary" aria-label="Home" (click)="navigateToJob()">
+        <span class="fa fa-home  "> Back</span>
+    </button>
+</div>
+<div class="card-container">
+    <span>
+        <img [src]="jobDescription.companyLogo" class="img-container" alt="Company Logo">
+    </span>
+
+    <span>
+        <h1 class="title-container"> {{ jobDescription.title }}</h1>
+    </span>
+
+</div>
+<div class="industry-container">
+    <ng-container *ngFor="let type of jobDescription.types">
+        <span class="tiles"> {{type}} </span>
+    </ng-container>
+    <ng-container *ngFor="let industry of jobDescription.industries">
+        <span class="tiles"> {{industry}} </span>
+    </ng-container>
+</div>
+
+<div class="industry-container">
+    <label class="label-style">Publish Date:</label> {{jobDescription.publishDate}}
+    <br>
+    <label class="label-style">Location:</label> {{jobDescription.location}}
+    <br>
+    <label class="label-style">Reference:</label> {{jobDescription.reference}}
+    <br>
+    <label class="label-style">Description:</label>
+    <p [innerHTML]="jobDescription.description"></p>
+    <br>
+</div>

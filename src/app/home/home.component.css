@@ -1,0 +1,21 @@
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.tab-title {
+    background-color: #3B4252;
+    display: flex;
+    flex-direction: row;
+    height: 33px;
+    width: 47%;
+    justify-content: center;
+    border: 1px solid antiquewhite;
+    align-items: center;
+    cursor: pointer;
+}
+
+.tab-title-container {
+    display: ruby-text;
+}

@@ -1,0 +1,46 @@
+.card-container {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-left: 37px;
+    margin-right: 37px;
+    margin-top: 30px;
+}
+
+.title-container {
+    font-size: xx-large;
+    margin-top: 21px;
+}
+
+.img-container {
+    width: 60px;
+    height: 60px;
+    margin: 10px
+}
+
+.back-btn {
+    color: black;
+    margin-top: 20px;
+    margin-left: 38px;
+    background-color: darkgrey;
+}
+
+.industry-container {
+    margin-left: 110px;
+}
+
+.tiles {
+    width: fit-content;
+    height: fit-content;
+    display: inline-block;
+    padding: 4px;
+    border-radius: 10%;
+    background-color: blueviolet;
+    margin-right: 14px;
+    margin-bottom: 12px;
+}
+
+.label-style {
+    font-weight: bold;
+}

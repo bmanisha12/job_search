@@ -1,0 +1,26 @@
+<ng-container *ngIf="favouriteJobs.length === 0">
+    <h2 class="msg-container">
+        No Favourite Jobs Selected
+    </h2>
+</ng-container>
+
+<ng-container *ngIf="favouriteJobs.length > 0">
+    <div *ngFor="let job of favouriteJobs">
+        <div class="card-container">
+            <span>
+                <span>
+                    <img [src]="job.companyLogo" class="img-container" alt="Company Logo">
+                </span>
+                <span>
+                    <span>
+                        <h2 class="title-container" (click)="navigateToSpecificJob(job.id)">{{ job.title }}</h2>
+                    </span>
+                    <span>
+                        <span>Company: {{job.companyName}}</span> <span class="refernce-container">Reference:
+                            {{job.reference}}</span>
+                    </span>
+                </span>
+            </span>
+        </div>
+    </div>
+</ng-container>
